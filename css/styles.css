@@ -8,7 +8,8 @@
 body {
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Press Start 2P', cursive;
+    /*font-family: 'Press Start 2P', cursive;*/
+    font-family: 'Fira Sans', sans-serif;
     color: white;
     background-color: black;
     width: 100%;
@@ -26,9 +27,10 @@ body {
     height: 6em;
     position: fixed;
     top: 0;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     z-index: 10;
-    background-color: black;
+    background-color: #00142f;
+    left: 0;
 }
 
 /*
@@ -38,6 +40,11 @@ body {
     display: flex;
     width: 50%;
     justify-content: left;
+}
+
+.navbar-logo img {
+    width: 100%;
+    height: auto;
 }
 
 /*
@@ -56,7 +63,7 @@ body {
     add padding 
 */
 .page-links p {
-    padding: 1em;
+    padding: 1em 2em;
     display: flex;
     align-self: center;
 }
@@ -68,10 +75,11 @@ body {
 .page-links a {
     text-decoration: none;
     color: white;
+    font-size: 1.15em;
 }
 
 /*
-    set dimensions of flex container
+    set dimensions welcome section
     set top margin to account for navbar
 */
 #welcome-section {
@@ -112,13 +120,135 @@ body {
     left: 50%;
     z-index: 1;
     transform: translate(-40%, -50%);
-    font-size: 2em;
-    width: 70%;
+    font-size: 2.5em;
+    width: 80%;
 }
 
-.about-me {
-    background-color: #606060;
+
+/* set background color and dimensions*/
+#about-me-div {
+    background-color: #00142f;
     width: 100%;
     height: 100%;
-    max-height: 53.125;
+}
+
+/* add padding to my name, remove margins, set color*/
+#about-me-div h2 {
+    padding: 6em 0em 2em 2em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #f95959;
+}
+
+/* two flex containers within this one. set height and width*/
+.about-me {
+    display: inline-flex;
+    width: 100%;
+    height: 40%;
+}
+
+/*text portion, make into flex container, center horizontally*/
+.about-me-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+/*set color, set width, set flex container, left align*/
+.about-me-text h3 {
+    color: #f95959;
+    width: 70%;
+    display: flex;
+    justify-content: left;
+    padding: 1em 0em 1em 1em;
+}
+
+/*set color, set width, center horizontally*/
+.about-me-text p {
+    color: #f95959;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+/*
+    set flex container, set max height, set width, center within
+    container
+*/
+.about-me-img {
+    display: flex;
+    max-height: 29em;
+    width: 50%;
+    justify-content: center;
+}
+
+/*make curved borders, set dimensions*/
+.about-me-img img {
+    border-radius: 25px;
+    height: 100%;
+    max-width: 50%;
+}
+
+/*skills div, make into flex container, add padding, set height*/
+.skills {
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5em 3em;
+}
+
+/*center skills title, set color and font-size*/
+.skills h3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #f95959;
+    font-size: 1.5em;
+}
+
+/*make into flex container, set width, space around, remove padding*/
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding-left: 0px;
+}
+
+/*make into flex container, align center, set width, set color*/
+.skills li {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    padding: 1em 0em;
+    color: #f95959;
+}
+
+#projects {
+    background-color: #011837;
+    height: 100%;
+    width: 100%;
+}
+
+.projects h3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2.5em 0em;
+    margin: 0px;
+    font-size: 2.5em;
+    color: #f95959;
+}
+
+.project-div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%
+}
+
+.project-div img{
+
 }
