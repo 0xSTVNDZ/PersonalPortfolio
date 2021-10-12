@@ -1,12 +1,13 @@
 <!-- ABOUT THE PROJECT -->
 ## Personal Portfolio
 
-<!--[Demo](https://example.com)-->
+[Demo](https://0xstvndz.github.io/PersonalPortfolio/)
 
 ### Built With
 
 * HTML5
 * CSS3
+* JS
 
 
 
@@ -32,8 +33,10 @@ Project is: _inprogress_
 - New design options
 
 To do:
-- wireframe site
-- build it
+- more media queries
+- more js
+- add contact form
+- create separate pages for projects
 
 <!-- CONTRIBUTING -->
 ## Contributing

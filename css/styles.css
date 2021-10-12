@@ -18,6 +18,7 @@ body {
     margin: 0px;
 }
 
+/*css rules when toggle light mode is clickec*/
 .light-mode {
     background-color: white;
     color: #00142f;
@@ -90,6 +91,20 @@ body {
     font-size: 1.15em;
 }
 
+@media only screen and (max-width: 800px){
+    
+    .page-links p {
+        padding: 0em;
+        display: flex;
+        align-self: center;
+    }
+    
+    .page-links a {
+        color: #00142f;
+        z-index: 0;
+    }
+}
+
 /*
     set dimensions welcome section
     set top margin to account for navbar
@@ -103,7 +118,7 @@ body {
     set div dimensions
 */
 .welcome-section {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -267,7 +282,7 @@ body {
 }
 
 /*will hold each image with associated text*/
-.project-container {
+.project-tile{
     width: 21%;
     height: 100%;
     margin: 2em 0em;
@@ -276,7 +291,7 @@ body {
 }
 
 /*img dimensions*/
-.project-container img {
+.project-tile img {
     width: 100%;
     height: auto;
 }
@@ -290,7 +305,7 @@ body {
     /*color: #f95959;*/
 }
 
-.project-container .prolink a {
+.project-tile .prolink a {
     font-size: 1em;
     /*color: #f95959;*/
 }
