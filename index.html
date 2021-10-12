@@ -15,7 +15,13 @@
         <nav class="" id="navbar">
             <!--logo div-->
             <div class="navbar-logo">
-                <!--<img src="./images/banner-tokyo.jpg" alt="">-->
+                <button onclick="switchTheme()">Toggle Light Mode</button>
+                <script>
+                    function switchTheme() {
+                        var element = document.body;
+                        element.classList.toggle("light-mode");
+                    }
+                </script>
             </div>
             <!--page links-->
             <div class="page-links">
@@ -81,7 +87,7 @@
 
         <!--Project section-->
         <section class="projects" id="projects">
-            <h3>Projects</h3>
+            <h3>These are some of my projects</h3>
             <div class="project-div">
                 <div class="project-container">
                     <img src="./images/project-previews/py-tech-doc.png" alt="">

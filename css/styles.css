@@ -11,9 +11,17 @@ body {
     /*font-family: 'Press Start 2P', cursive;*/
     font-family: 'Fira Sans', sans-serif;
     color: white;
-    background-color: black;
+    background-color: #00142f;
     width: 100%;
     height: 100%;
+    left: 0;
+    margin: 0px;
+}
+
+.light-mode {
+    background-color: white;
+    color: #00142f;
+    left: 0;
 }
 
 /*
@@ -42,9 +50,13 @@ body {
     justify-content: left;
 }
 
-.navbar-logo img {
-    width: 100%;
-    height: auto;
+.navbar-logo button {
+    height: 30%;
+    width: 10em;
+    display: flex;
+    align-self: center;
+    border-radius: 10px;
+    margin-left: 2em;
 }
 
 /*
@@ -105,6 +117,7 @@ body {
     max-height: 90vh;
     width: 100%;
     z-index: 0;
+    left: 0;
 }
 
 /*
@@ -127,7 +140,6 @@ body {
 
 /* set background color and dimensions*/
 #about-me-div {
-    background-color:#011837;
     width: 100%;
     height: 100%;
 }
@@ -137,7 +149,7 @@ body {
     padding: 6em 0em 2em 2em;
     margin-top: 0px;
     margin-bottom: 0px;
-    color: #f95959;
+    /*color: #f95959;*/
     font-size: 2em;
 }
 
@@ -159,7 +171,7 @@ body {
 
 /*set color, set width, set flex container, left align*/
 .about-me-text h3 {
-    color: #f95959;
+    /*color: #f95959;*/
     width: 70%;
     display: flex;
     justify-content: left;
@@ -168,7 +180,7 @@ body {
 
 /*set color, set width, center horizontally*/
 .about-me-text p {
-    color: #f95959;
+    /*color: #f95959;*/
     width: 70%;
     display: flex;
     justify-content: center;
@@ -205,7 +217,7 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    color: #f95959;
+    /*color: #f95959;*/
     font-size: 1.5em;
 }
 
@@ -224,12 +236,11 @@ body {
     justify-content: center;
     width: 30%;
     padding: 1em 0em;
-    color: #f95959;
+    /*color: #f95959;*/
 }
 
 /*div, set dimensions*/
 #projects {
-    background-color: #00142f;
     height: 100%;
     width: 100%;
 }
@@ -242,7 +253,8 @@ body {
     padding: 2.5em 0em;
     margin: 0px;
     font-size: 2.5em;
-    color: #f95959;
+    /*color: #f95959;*/
+    text-decoration: underline;
 }
 
 /*set up container to hold each project*/
@@ -275,7 +287,12 @@ body {
     width: 100%;
     justify-content: center;
     padding: 1em 0em;
-    color: #f95959;
+    /*color: #f95959;*/
+}
+
+.project-container .prolink a {
+    font-size: 1em;
+    /*color: #f95959;*/
 }
 
 /*link to github repos*/
@@ -311,6 +328,7 @@ footer {
 footer p{
     display: flex;
     width: 15%;
+    color: white;
 }
 
 /*flex container holding icons*/
