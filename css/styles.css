@@ -24,7 +24,7 @@ body {
 #navbar {
     display: inline-flex;
     width: 100%;
-    height: 6em;
+    height: 5em;
     position: fixed;
     top: 0;
     /* border: 1px solid white; */
@@ -84,7 +84,7 @@ body {
 */
 #welcome-section {
     width: 100%;
-    margin-top: 5.65em;
+    margin-top: 5em;
 }
 
 /*
@@ -127,7 +127,7 @@ body {
 
 /* set background color and dimensions*/
 #about-me-div {
-    background-color: #00142f;
+    background-color:#011837;
     width: 100%;
     height: 100%;
 }
@@ -138,6 +138,7 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
     color: #f95959;
+    font-size: 2em;
 }
 
 /* two flex containers within this one. set height and width*/
@@ -226,12 +227,14 @@ body {
     color: #f95959;
 }
 
+/*div, set dimensions*/
 #projects {
-    background-color: #011837;
+    background-color: #00142f;
     height: 100%;
     width: 100%;
 }
 
+/*project title, center horizontally, add padding, set color*/
 .projects h3 {
     display: flex;
     justify-content: center;
@@ -242,13 +245,83 @@ body {
     color: #f95959;
 }
 
+/*set up container to hold each project*/
 .project-div {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     height: 100%
 }
 
-.project-div img{
+/*will hold each image with associated text*/
+.project-container {
+    width: 21%;
+    height: 100%;
+    margin: 2em 0em;
+    border: 3px dashed #e3e3e3;
+    padding: 1em;
+}
 
+/*img dimensions*/
+.project-container img {
+    width: 100%;
+    height: auto;
+}
+
+/*img text */
+.projects p {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1em 0em;
+    color: #f95959;
+}
+
+/*link to github repos*/
+#view-all-projects {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 3em 0em;
+}
+
+.projects a {
+    color: #e3e3e3;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/*on hover change color of link*/
+.projects a:hover {
+    color: #f95959;
+}
+
+/*footer, set background color, set margin and padding*/
+footer {
+    background-color: black;
+    margin: 0px;
+    display: inline-flex;
+    width: 100%;
+    padding: 2em 0em;
+    justify-content: space-around;
+}
+
+/*copy right*/
+footer p{
+    display: flex;
+    width: 15%;
+}
+
+/*flex container holding icons*/
+.contact-link {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+/*icons*/
+.contact-link img {
+    height: 2em;
+    width: auto;
 }
